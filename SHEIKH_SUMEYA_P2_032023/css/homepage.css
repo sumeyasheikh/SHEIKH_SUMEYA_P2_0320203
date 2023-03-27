@@ -2,6 +2,7 @@ body {
     background-color: rgb(247, 247, 247);
     padding: none;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -73,32 +74,33 @@ header img {
 
 /* button */
 
-.button, .second-btn, .third-btn {
-    background-image: linear-gradient(45deg,#dfa3e3, #330636);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    width: 70%;
-    color: white;
-    padding: 19px 55px ;
-    border-radius: 2em;
-    transform: scale(1);
-    transition-property: all;
-    transition-duration: 200ms;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    border-style: none;
-    font-size: 17px;
-    box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
-  }
+.second-btn{
+  background-image: linear-gradient(180deg,#ed58c3, #9356DC);
+  text-align: center;
+  width: 60%;
+  padding: 22px 55px ;
+  border-radius: 3em;
+  transform: scale(1);
+  transition: all 200ms;
+  border-style: none;
+  box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
+  margin: 30px;
+}
 
-  button:hover {
-    background-color: rgb(202, 147, 212);
-    transform: scale(1.10);
-  }
+.second-btn a {
 
-  @media only screen and (min-width: 601px) {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.second-btn:hover {
+  background-image: linear-gradient(180deg,#fc9fe3, #8160a9);
+  transform: scale(1.10);
+}
+
+@media only screen and (min-width: 601px) {
     .button {
       display: none; /* Hide the button on desktop screens */
     }
@@ -138,8 +140,8 @@ header img {
 
 .explore-list:hover {
 
-background-color: rgb(182, 119, 177);
-color: white;
+background-color: #dccfde;
+color: rgb(0, 0, 0);
 transform: scale(1.05)
 }
 
@@ -160,7 +162,7 @@ transform: scale(1.05)
   position: absolute;
   height: 22px;
   width: 22px;
-  background-color: #87379d;
+  background-color: #9356DC;
   color: white;
   text-align: center;
   padding: 5px 5px;
@@ -214,14 +216,22 @@ nav {
     background-color: rgb(159, 159, 159);
     padding: 8px;
     text-align: center;
-    margin: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     box-shadow: 0px 0px 8px rgb(28, 28, 28);
 
 }
 
+.paris-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+
+.paris-location {
+  margin-right: 10px;
+}
 
 nav h3 {
 padding-left: 10px;
@@ -236,6 +246,14 @@ padding-left: 10px;
     margin: none;
     padding: 20px;
  }
+
+.restaurant h1 {
+  margin: 30px;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
 
 .container-homepage {
     display: flex;
@@ -256,7 +274,7 @@ padding-left: 10px;
   justify-content: center;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  margin: 20px;
+  margin: 30px;
   width: 90%;
   border-radius: 1em;
   transition:all 200ms;

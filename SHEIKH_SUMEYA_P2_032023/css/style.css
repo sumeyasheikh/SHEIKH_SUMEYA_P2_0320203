@@ -5,6 +5,7 @@ body {
     background-color: rgb(143, 143, 143);
     padding: none;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -64,7 +65,6 @@ header img {
     background-color: rgb(236, 226, 213);
     border-radius: 5px;
     margin-bottom: 100px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
     letter-spacing: 1px;
 }
@@ -146,11 +146,11 @@ background-color: antiquewhite;
 }
 
 .container h1 {
-font-family: 'Taviraj', serif;
+font-family: 'Shrikhand', cursive;
 font-weight: bolder;
 padding-left: 20px;
 font-size: 31px;
-font-weight: 800;
+font-weight: 400;
 display: inline-block;
 float: left;
 margin-right: 170px;
@@ -224,7 +224,6 @@ margin-right: 170px;
   #big-text {
         color: rgb(0, 0, 0);
         font-size: 15px;
-        font-family:Georgia, 'Times New Roman', Times, serif;    font-family: 100;
         letter-spacing: 1px;
         width: 60%;
         text-align: center;
@@ -263,29 +262,28 @@ margin-right: 170px;
 /* button */
 
 .button {
-    background-image: linear-gradient(45deg,#dfa3e3, #330636);
+  background-image: linear-gradient(180deg,#ed58c3, #9356DC);
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
     color: white;
     padding: 19px 55px ;
-    border-radius: 2em;
+    border-radius: 3em;
     transform: scale(1);
-    transition-property: all;
-    transition-duration: 200ms;
+    transition:  all 400ms ;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     border-style: none;
-    font-size: 17px;
+    font-size: 22px;
     box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
   }
 
   button:hover {
-    background-color: rgb(202, 147, 212);
-    transform: scale(1.10);
-  }
+      background-image: linear-gradient(180deg,#fc9fe3, #8160a9);
+      transform: scale(1.10);
+    }
+  
 
   @media only screen and (min-width: 601px) {
     .button {
@@ -306,35 +304,74 @@ margin-right: 170px;
 /* footer */
 
 footer {
-    height: 170px;
-    padding: 50px;
-    background-color: rgb(77, 77, 77);
+  height: auto;
+  padding: 30px 0px;
+  background-color: rgb(77, 77, 77);
+}
+
+footer img {
+  margin: 20px;
+  filter: brightness(0) invert(1);
+  width: 10%;
+}
+.footer-icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fa-handshake-simple, .fa-utensils {
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 
 ul li {
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 30px;
-    list-style-type: none;color: white;
-    text-align: left;
-    padding-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 35px;
+  list-style-type: none;color: white;
+  text-align: left;
 
 }
-
 
 a {
-    text-decoration: none;
-    text-decoration-style: none;
-    text-emphasis-color: none;
-    color: black;
+  text-decoration: none;
+  text-decoration-style: none;
+  text-emphasis-color: none;
+  color: black;
 }
+
+@media only screen and (max-width: 600px) {
+  footer ul {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  ul li {
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 35px;
+    list-style-type: none;color: white;
+    text-align: left;
+
+  }
+
+  footer img {
+    margin: 20px;
+    filter: brightness(0) invert(1);
+    width: 25%;
+  }
+}
+
+
 
 /* footer done */
 
@@ -344,15 +381,14 @@ a {
 
 .container h2 {
 
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
-    font-family: 200;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 
 }
 .container p {
 
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 16px;
     padding-left: 10px;
     text-align: center;
@@ -382,9 +418,9 @@ a {
 
 
 .menu-item-name {
-    font-size: 22px;
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     padding-left: 10px;
     display: block;
     justify-content: center;
@@ -424,17 +460,16 @@ a {
 
 @media only screen and (max-width: 600px) {
     .container p {
-
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 20px;
         padding-left: 10px;
         text-align: start;
     }
     .menu-item-name {
-        font-size: 22px;
+        font-size: 25px;
         font-family: 'Roboto', sans-serif;
-        font-weight: 400;
+        font-weight: 700;
         padding-left: 10px;
         display: inline-block;
         margin-top: 12px;
@@ -449,6 +484,8 @@ a {
         font-size: 20px;
         padding-right: 10px;
         margin-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
     }
     .menu-group-heading {
         display: inline-block;
