@@ -1,0 +1,552 @@
+body {
+    background-color: rgb(247, 247, 247);
+    padding: none;
+    margin: auto;
+}
+
+
+/*  header */
+header {
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+}
+
+header img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 45px;
+    width: auto;
+}
+
+
+@media (max-width: 600px) {
+  header {
+        width: auto;
+        background-color: rgb(221, 221, 221);
+        padding: 20px;
+        margin: 0;
+    }
+ header img {
+        width: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        float:inline-start;
+  }
+}
+
+
+    /*  header */
+
+  /* homepage main */
+
+.home-main h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.home-main p {
+    font-size: 25px;
+    color: rgb(75, 74, 74);
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    font-weight: 100;
+}
+
+.home-main {
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    line-height: 40px;
+    box-shadow: 0px 0px 6px rgb(64, 64, 64);
+}
+
+/* homepage main */
+
+/* button */
+
+.button, .second-btn, .third-btn {
+    background-image: linear-gradient(45deg,#dfa3e3, #330636);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 70%;
+    color: white;
+    padding: 19px 55px ;
+    border-radius: 2em;
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 200ms;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border-style: none;
+    font-size: 17px;
+    box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
+  }
+
+  button:hover {
+    background-color: rgb(202, 147, 212);
+    transform: scale(1.10);
+  }
+
+  @media only screen and (min-width: 601px) {
+    .button {
+      display: none; /* Hide the button on desktop screens */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .button {
+      display: block; /* Show the button on mobile screens */
+      justify-content: center; /* Center the button horizontally */
+    }
+  }
+
+ /* button done */
+
+
+  /* homesection*/
+
+
+ .homesection {
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    margin: none;
+}
+
+.homesection h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.homesection  h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.explore-list:hover {
+
+background-color: rgb(182, 119, 177);
+color: white;
+transform: scale(1.05)
+}
+
+.container-explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.explore-list {
+    border-radius: 2em;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 8px;
+    width: 40%;
+    background-color: white;
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 200ms;
+    box-shadow: 20px 0px 30px rgb(0,0,0,0.1), -20px 0px 30px rgb(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .homesection h2 {
+    text-align: left;
+    padding-left: 10px;
+
+  }
+  .container-explore {
+    display: flex;
+    flex-direction: column;
+  }
+  .explore-list {
+    width: 90%;
+  }
+}
+
+  /* homesection done */
+
+
+/* nav  */
+
+nav {
+    background-color: rgb(159, 159, 159);
+    padding: 8px;
+    text-align: center;
+    margin: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 8px rgb(28, 28, 28);
+
+}
+
+
+nav h3 {
+padding-left: 10px;
+}
+
+/* nav done */
+
+/* card */ /* restuarant */
+
+.restaurant {
+    background-color: rgb(221, 221, 221);
+    margin: none;
+    padding: 20px;
+ }
+
+.container-homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  border-radius: 2em;
+  transition:all 200ms;
+  box-shadow: 1ems black;
+  box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
+  padding-bottom: 10px;
+
+    }
+
+.card:hover {
+        transform: scale(0.9);
+}
+    
+
+
+.card h2  {
+        padding-left: 25px;
+        margin-bottom: 16px;
+}
+
+.newyork  {
+        padding-left: 25px;
+        align-items: flex-end;
+        margin-top: -10px;
+        font-size: 20px;
+    }
+
+/* card done */
+
+    .material-symbols-outlined {
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        float: left;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    
+    
+/* footer  */
+
+    footer {
+        height: 170px;
+        padding: 50px;
+        background-color: rgb(77, 77, 77);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    ul li {
+        text-decoration: none;
+        font-size: 10px;
+        line-height: 30px;
+        list-style-type: none;color: white;
+        text-align: left;
+        padding-left: 10px;
+
+    }
+
+    a {
+        text-decoration: none;
+        text-decoration-style: none;
+        text-emphasis-color: none;
+        color: black;
+    }
+    /* footer done */
+
+/* notes
+
+When you click on Contact, a link to an email address is made.
+
+● When hovering, the background color of the main buttons should lighten slightly. The drop shadow should also be more visible.
+● Eventually, visitors will be able to save their favorite menus. For that, a heart-shaped Like button is present on the model. When you click on it, it should fill up gradually. For this first version, the effect can appear on hovering on desktop instead of clicking.
+
+
+Home Page
+● When the application has more menus, a loading spinner will be necessary. On this mock-up, we would like to have a preview of it. It will have to appear for 1 to 3 seconds when you arrive on the home page, cover the whole screen, and use CSS animations (no library). The design of this loader is not defined, so any proposal is welcome as long as it is consistent with the graphic charter.
+
+Menu Pages
+● When arriving on the page, the dishes should appear gradually with a slight time lag. They may appear either one by one or by group Starter, Main course, and Dessert. An example of the expected effect is provided.
+● The visitor can add the dishes he wishes to his order by clicking on them. A small checkmark will appear to the right of the dish. This tick should slide from right to left. For this first version, the effect can be displayed on hovering on desktop instead of clicking. If the title of the dish is too long, it will have to be trimmed with suspension points. An example of the expected effect is provided.
+
+
+*/
+
+/* banner  main */
+
+.slideshow {
+    position: relative;
+    height: 70vh;
+    width: auto;
+
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    z-index: -1;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-color: aqua;
+  }
+  
+  .slide:nth-child(1) {
+    animation-name: slide1;
+  }
+  
+  .slide:nth-child(2) {
+    animation-name: slide2;
+  }
+  
+  .slide:nth-child(3) {
+    animation-name: slide3;
+  }
+  
+  .slide:nth-child(4) {
+    animation-name: slide4;
+  }
+  
+  .slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slide-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding-bottom: 60px;
+  }
+  
+
+  .third-btn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px 20px;
+  }
+
+  .third-btn:hover {
+    background-color: rgb(235, 230, 235);
+    transform: scale(1.10);
+  }
+
+@keyframes slide1 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  /* Add the other two keyframes for slide3 and slide4 with opacity property */
+  
+
+
+@media only screen and (min-width: 601px) {
+    main .banner-main, .slideshow , .banner-main img, .our-story , .our-story img{
+      display: block; /* Hide the button on desktop screens */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    main .banner-main, .slideshow , .banner-main img, .our-story, .our-story  img {
+      display: none;
+      font: none;/* Show the button on mobile screens */
+       /* Center the button horizontally */
+    }
+  }
+
+  @media only screen and (min-width: 601px) {
+    nav, .home-main,  .restaurant, .container-homepage, .card, .homesection img {
+      display: none; /* Hide the button on desktop screens */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    nav, main .home-main, .restaurant, .container-homepage, .card, .homesection img {
+      display: block;
+    }
+  }
+
+
+
+/* banner  main */
+
+/* Main Main Main */
+
+.our-story 
+{background-color: 
+  rgb(231, 213, 229);
+}
+
+.backgroud-box {
+  position: relative;
+  padding: 80px;
+}
+
+.topleft {
+  display: flex;
+  position: absolute;
+  top: 144px;
+  left: 120px;
+  font-size: 13px;
+  background-image: linear-gradient(60deg, rgb(231, 119, 166), rgb(198, 194, 194));
+  width: 30%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-radius: 1em;
+
+}
+
+span {
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+
+.our-story img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .topleft  {
+    font-size: 10px;
+  }
+}
