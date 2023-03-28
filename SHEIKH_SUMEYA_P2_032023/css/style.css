@@ -131,19 +131,14 @@ header img {
 
 
 .menu-item {
-padding-top: 8px;
-padding-bottom: 1px;
-padding-left: 10px;
-padding-right: 8px;
+
 margin-bottom: 20px;
 margin-top: 20px;
 box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
 }
 
 
-.menu-item:hover {
-background-color: antiquewhite;
-}
+
 
 .container h1 {
 font-family: 'Shrikhand', cursive;
@@ -190,21 +185,19 @@ margin-right: 170px;
     }
     .menu-item {
         background-color: rgb(237, 237, 237);
-        padding-top: 10px;
-        padding-bottom: 1px;
-        padding-left: 10px;
-        padding-right: 8px;
         margin-bottom: 20px;
-        margin-top: 10px;
         border-style: none;
         border-radius: 1.5em;
         box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
         position: relative;
-    }
-    .menu-item:hover {
-        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        cursor: pointer;
         }
     }
+
+  
 
 
 
@@ -246,7 +239,7 @@ margin-right: 170px;
   }
 
   @media only screen and (min-width: 601px) {
-    .menu-item-description {
+    .menu-item-description, .fa-spin {
       display: none;
       margin-bottom: 20px;
     }
@@ -288,14 +281,14 @@ margin-right: 170px;
 
   @media only screen and (min-width: 601px) {
     .button {
-      display: none; /* Hide the button on desktop screens */
+      display: none; 
     }
   }
 
   @media only screen and (max-width: 600px) {
     .button {
-      display: block; /* Show the button on mobile screens */
-      justify-content: center; /* Center the button horizontally */
+      display: block; 
+      justify-content: center; 
     }
   }
 
@@ -411,7 +404,7 @@ a {
 }
 
 @media only screen and (min-width: 601px) {
-  .heart{
+  .heart, .tick-box {
     display: none;
 
   }
@@ -427,7 +420,8 @@ a {
     display: block;
     justify-content: center;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 15px;
+    margin-left: 10px;
 
 }
 
@@ -438,8 +432,12 @@ a {
     align-items: flex-end;
     font-size: 20px;
     padding-right: 10px;
-    margin-top: 10px;
+    margin: 10px;
 }
+.menu-item-description {
+  margin: 15px 10px;
+}
+
 
 .menu-group-heading {
     display: block;
@@ -464,28 +462,28 @@ a {
     .container p {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 18px;
         padding-left: 10px;
         text-align: start;
     }
     .menu-item-name {
-        font-size: 25px;
+        font-size: 22px;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         padding-left: 10px;
         display: inline-block;
         margin-top: 12px;
         text-align: start;
+
     }
     .menu-item-price {
         text-align: end;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         float: right;
         align-items: flex-end;
         font-size: 20px;
-        padding-right: 10px;
-        margin-top: 10px;
+        margin-bottom: 15px;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
     }
@@ -613,22 +611,53 @@ section h3  {
 
 @media only screen and (max-width: 600px) {
   .tick-box {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    height: 116px;
+    position: relative;
     width: 0;
     background-color: rgb(73, 195, 189);
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: white;
+
   }
   .menu-item:hover .tick-box {
-    width: 100px;
+    width: 130px;
+    padding-left: 20px;
+    color: white;
+  }
+  .menu-text:hover {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .card-text {
+      width: 100%;
+      background-color: #ececec;
+    }
   }
   
 
+  .tick-box:hover  .fa-spin{
+    -webkit-animation: 1s rotate;
+            animation: 1s rotate;
+  }
+  @-webkit-keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   
-
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
