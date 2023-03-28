@@ -304,62 +304,40 @@ footer img {
   filter: brightness(0) invert(1);
   width: 10%;
 }
-.footer-icon {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
 
 .fa-handshake-simple, .fa-utensils {
   margin-right: 10px;
   filter: brightness(0) invert(1);
 }
 
-ul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-
-ul li {
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 35px;
-  list-style-type: none;color: white;
-  text-align: left;
-
-}
-
 a {
   text-decoration: none;
-  text-decoration-style: none;
-  text-emphasis-color: none;
   color: black;
 }
 
 @media only screen and (max-width: 600px) {
-  footer ul {
-    display: flex;
-    flex-direction: column;
-
+  footer img {
+    margin: 20px;
+    filter: brightness(0) invert(1);
+    width: 25%;
   }
 
   ul li {
     text-decoration: none;
     font-size: 25px;
     line-height: 35px;
-    list-style-type: none;color: white;
+    list-style-type: none;
+    color: white;
     text-align: left;
 
   }
 
-  footer img {
-    margin: 20px;
-    filter: brightness(0) invert(1);
-    width: 25%;
+  li a {
+    color: white;
   }
 }
+
+
 
 
 
@@ -621,7 +599,7 @@ section h3  {
 
   }
   .menu-item:hover .tick-box {
-    width: 130px;
+    width: 100px;
     padding-left: 20px;
     color: white;
   }
@@ -633,9 +611,22 @@ section h3  {
   .card-text {
       width: 100%;
       background-color: #ececec;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .menu-item-price {
+      margin-inline-start: auto;
+      padding: 2px;
+      display: flex;
     }
   }
   
+
+  .menu-item-name, .menu-item-description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 
   .menu-item:hover .fa-circle-check {
     -webkit-animation: rotate 1s;
