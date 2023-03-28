@@ -3,15 +3,15 @@
 
 body {
     background-color: rgb(143, 143, 143);
-    padding: none;
-    margin: auto;
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 
 @media (max-width: 600px) {
     header, body, main, nav, a, section, .main, .homesection, .home-main, .restaurant {
-        width: 500px
+        width: 500px;
     }
 }
 
@@ -135,6 +135,7 @@ header img {
 margin-bottom: 20px;
 margin-top: 20px;
 box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
+padding: 10px 8px ;
 }
 
 
@@ -145,7 +146,7 @@ font-family: 'Shrikhand', cursive;
 font-weight: bolder;
 padding-left: 20px;
 font-size: 31px;
-font-weight: 400;
+font-weight: 00;
 display: inline-block;
 float: left;
 margin-right: 170px;
@@ -194,6 +195,7 @@ margin-right: 170px;
         justify-content: space-between;
         overflow: hidden;
         cursor: pointer;
+        padding: 0;
         }
     }
 
@@ -640,24 +642,26 @@ section h3  {
   }
   
 
-  .tick-box:hover  .fa-spin{
+  .menu-text:hover .tick-box{
     -webkit-animation: 1s rotate;
             animation: 1s rotate;
   }
-  @-webkit-keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+
+ 
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
