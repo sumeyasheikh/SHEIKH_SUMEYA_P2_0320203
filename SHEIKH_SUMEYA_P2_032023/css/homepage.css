@@ -8,16 +8,20 @@ body {
 
 /*  header */
 header {
-    background-color: rgb(208, 208, 208);
-    padding: 10px;
+  background-color: rgb(208, 208, 208);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add inner box shadow */
+  padding: 10px 20px;
+  position: relative;
+  z-index: 2;
 }
 
 header img {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    height: 45px;
-    width: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 45px;
+  width: auto;
+
 }
 
 
@@ -67,7 +71,7 @@ header {
     padding-top: 25px;
     padding-bottom: 100px;
     line-height: 40px;
-    box-shadow: 0px 0px 6px rgb(64, 64, 64);
+
 }
 
 /* homepage main */
@@ -101,13 +105,13 @@ header {
 }
 
 @media only screen and (min-width: 601px) {
-    .button {
+    .button, .new-box {
       display: none; /* Hide the button on desktop screens */
     }
   }
 
   @media only screen and (max-width: 600px) {
-    .button {
+    .button, .new-box {
       display: block; /* Show the button on mobile screens */
       justify-content: center; /* Center the button horizontally */
     }
@@ -189,7 +193,7 @@ transform: scale(1.05)
     transform: scale(1);
     transition-property: all;
     transition-duration: 200ms;
-    box-shadow: 20px 0px 30px rgb(0,0,0,0.1), -20px 0px 30px rgb(0,0,0,0.1);
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -213,8 +217,8 @@ transform: scale(1.05)
 /* nav  */
 
 nav {
-    background-color: rgb(159, 159, 159);
-    padding: 8px;
+    background-color: rgb(207, 207, 207);
+    padding: 5px;
     text-align: center;
     box-shadow: 0px 0px 8px rgb(28, 28, 28);
 
@@ -281,6 +285,8 @@ padding-left: 10px;
   box-shadow: black;
   box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
   padding-bottom: 10px;
+  position: relative;
+
 
 }
 
@@ -324,6 +330,7 @@ flex-wrap: wrap;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   transition: all 0.5s;
+  transition-timing-function: ease-in-out;
 
 }
 
@@ -448,23 +455,19 @@ Menu Pages
   }
 
   @media only screen and (max-width: 600px) {
-    main , .slideshow , .banner-main img, .our-story, .our-story  img {
+    .slideshow , .banner-main img, .our-story, .our-story, nav  img {
       display: none;
       font: none;
     }
   }
 
   @media only screen and (min-width: 601px) {
-    nav, .home-main,  .homesection img , .number-group{
+     .home-main,  .homesection img , .number-group{
       display: none; 
     }
   }
 
-  @media only screen and (max-width: 600px) {
-    nav, main .home-main, .homesection img, .number-group {
-      display: block;
-    }
-  }
+
 
 
 
@@ -472,38 +475,47 @@ Menu Pages
 
 /* Main Main Main */
 
-.our-story 
-{background-color: 
-  rgb(94, 94, 94);
+.our-story {
+  position: relative;
+
 }
 
-.our-story img {
+.backgroud-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: rgb(94, 94, 94);
+}
+
+.image img {
   width: 100%;
   height: auto;
-  opacity: 20%;
 }
 
 .welcome-box {
-display: flex;
-flex-direction: column;
-padding: 10px;
-font-size: large;
-position: absolute;
-top: 25%;
-left: 10%;
-color: rgb(255, 255, 255);
-font-weight: 800;
-margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: large;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  margin: 10% 10%;
+  
 }
 
 .welcome-box p {
-  font-family: cursive;
-  color: purple;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(179, 137, 179);
   font-weight: bold;
   margin: 0;
 }
+
 .welcome-box h2 {
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 800;
 }
@@ -513,28 +525,45 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   height: 20px;
   background-color: orange;
   border-radius: 1em;
-  padding: 20px;
+  padding: 13px;
+  padding-top: 16px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
+  color: white;
+  font-weight: 800;
 }
 
 
+@media only screen and (max-width: 950px) {
+  
+  .welcome-box p, h2 {
+    font-size: small;}
+    .explore {
+      width: 100px;
+      height: 12px;
+      padding: 14px;
+      font-size: x-small;
+    }
 
-.card .new-box {
-  position: absolute;
-  top: 5%;
-  left: 73%;
-  width: 100px;
-  height: 28px;
-  font-size: 14px;
-  color: rgb(65, 148, 127);
-  background-color: rgb(140, 216, 193);
-  border-radius: 4px;
-  text-align: center;
-  padding-top: 10px;
+  }
 
-
-}
+ 
+  .new-box {
+    position: absolute;
+    top: 5%;
+    left: 73%;
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+    color: rgb(65, 148, 127);
+    background-color: rgb(140, 216, 193);
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 10px;
+  
+  
+  }
 
 @media only screen and (min-width: 601px) {
   .container-homepage {
@@ -573,3 +602,30 @@ font-size: 13px;
 }
 }
 
+
+/* CSS code 
+.preloader {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+#preloader-checkbox:checked ~ .preloader {
+  display: none;
+}
+
+label {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 101;
+  cursor: pointer;
+  background-color: #ccc;
+  padding: 10px;
+}
+*/
+.new-box {
+  z-index: 1;
+}
