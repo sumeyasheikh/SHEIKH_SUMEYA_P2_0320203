@@ -199,6 +199,7 @@ margin-right: 170px;
         border-style: none;
         border-radius: 1.5em;
         box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
+        position: relative;
     }
     .menu-item:hover {
         background-color: antiquewhite;
@@ -412,6 +413,7 @@ a {
 @media only screen and (min-width: 601px) {
   .heart{
     display: none;
+
   }
 }
 
@@ -607,3 +609,26 @@ section h3  {
     }
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .tick-box {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    height: 116px;
+    width: 0;
+    background-color: rgb(73, 195, 189);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    transition: width 0.3s ease-in-out;
+  }
+  .menu-item:hover .tick-box {
+    width: 100px;
+  }
+  
+
+  }
+  
+
