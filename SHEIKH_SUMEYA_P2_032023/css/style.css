@@ -9,13 +9,6 @@ body {
 }
 
 
-@media (max-width: 600px) {
-    header, body, main, nav, a, section, .main, .homesection, .home-main, .restaurant {
-        width: 500px;
-    }
-}
-
-
 /*  header */
 header {
     background-color: rgb(208, 208, 208);
