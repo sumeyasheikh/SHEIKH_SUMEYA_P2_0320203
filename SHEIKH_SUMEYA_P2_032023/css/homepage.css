@@ -759,3 +759,30 @@ font-size: 13px;
     font-size: 14px;
   }
 }
+
+
+@media only screen and (max-width: 494px) {
+  .new-box {
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    width: 80px;
+    height: 10px;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+  .restaurant h1 {
+    font-size: 20px;
+  }
+  .card img{
+height: 180px;
+  }
+  .card h2, .card p, .heart, ul li, .home-main p , .home-main h1, .explore-list h4, .homesection h2, .paris-navbar h3 {
+    font-size: small;
+  }
+  .second-btn {
+    padding: 10px 35px;
+    font-size: small;
+  }
+  
+}
