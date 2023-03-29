@@ -152,7 +152,7 @@ header {
   box-shadow: 30px 0px 40px rgb(0,0,0,0.2), -30px 0px 40px rgb(0,0,0,0.2);
   margin: 30px;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   font-family: sans-serif;
   font-weight: 600;
   
@@ -210,9 +210,14 @@ header {
     padding-top: 7px;
 }
 
-.explore-list:hover {
 
-background-color: #dccfde;
+.explore-list:hover .material-symbols-outlined {
+  color:#843fd8;
+  animation: 0.2 ease-in;
+}
+
+.explore-list:hover {
+background-color: #f1eaf9;
 color: rgb(0, 0, 0);
 transform: scale(1.05)
 }
@@ -412,8 +417,8 @@ flex-wrap: wrap;
 
 
 .heart:hover {
-  color: rgb(255, 81, 238);
-  -webkit-text-stroke-color: rgb(218, 88, 232);
+  color:#9058d4;
+  -webkit-text-stroke-color: #925cd5;
 }
 /* card done */
 
@@ -423,17 +428,17 @@ flex-wrap: wrap;
         align-items: center;
         float: left;
         padding: 25px;
-        color: rgb(75, 75, 75);
+        color: rgb(53, 53, 53);
     }
 
-
+  
     
 /* footer  */
 
 footer {
   height: auto;
   padding: 30px 0px;
-  background-color: rgb(77, 77, 77);
+  background-color: rgb(69, 68, 68);
 }
 
 footer img {
@@ -451,6 +456,19 @@ a {
   text-decoration: none;
   color: black;
 }
+ul li {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 35px;
+  list-style-type: none;
+  color: white;
+  text-align: left;
+
+}
+
+li a {
+  color: white;
+}
 
 @media only screen and (max-width: 600px) {
   footer img {
@@ -461,7 +479,7 @@ a {
 
   ul li {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 35px;
     list-style-type: none;
     color: white;
@@ -670,30 +688,6 @@ font-size: 13px;
 }
 }
 
-
-/* CSS code 
-.preloader {
-  background-color: white;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-#preloader-checkbox:checked ~ .preloader {
-  display: none;
-}
-
-label {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 101;
-  cursor: pointer;
-  background-color: #ccc;
-  padding: 10px;
-}
-*/
 .new-box {
   z-index: 1;
 }
@@ -757,5 +751,11 @@ label {
   }
   .card p {
     font-size: 8px;
+  }
+  .explore-list {
+    font-size: 13.5px;
+  }
+  .explore-list .material-symbols-outlined {
+    font-size: 14px;
   }
 }
