@@ -103,7 +103,6 @@ header img {
     padding-top: 30px;
     padding-bottom: 150px;
     position: relative;
-    z-index: 0.5;
     }
 
 .menu-box {
@@ -140,7 +139,6 @@ font-family: 'Shrikhand', cursive;
 font-weight: bolder;
 padding-left: 20px;
 font-size: 31px;
-font-weight: 00;
 display: inline-block;
 float: left;
 margin-right: 170px;
@@ -155,7 +153,6 @@ margin-right: 170px;
         border-top-right-radius: 2em;
         border-top-left-radius: 3em;
         position: relative;
-        z-index: 0.5;
         background-color:rgb(221, 221, 221);
     }
 }
@@ -403,7 +400,6 @@ a {
 .menu-item-price {
     text-align: center;
     display: none;
-    justify-content: c;
     align-items: flex-end;
     font-size: 20px;
     padding-right: 10px;
@@ -489,7 +485,7 @@ section h3  {
 .price {
     color: rgb(0, 0, 0);
     font-size: 12px;
-    font-family:Georgia, 'Times New Roman', Times, serif;    font-family: 100;
+    font-family:Georgia, 'Times New Roman', Times, serif;    
     letter-spacing: 1px;
     width: 70%;
     text-align: center;
