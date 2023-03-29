@@ -23,13 +23,16 @@ header img {
     justify-content: center;
     padding: 15px;
     height: auto;
-    width: 40%;
+    width: 25%;
     margin: auto;
 }
 
 @media (max-width: 600px) {
      .menu-main h1 {
         display: none;
+     }
+     header img {
+      width: 40%;
      }
 }
 /*  header done */
@@ -620,16 +623,8 @@ section h3  {
     animation: rotate 1s;
   }
 
-  @-webkit-keyframes rotate {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
+
+
 
   @keyframes rotate {
     0% {
