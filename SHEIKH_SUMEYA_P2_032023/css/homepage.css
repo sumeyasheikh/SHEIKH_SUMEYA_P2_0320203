@@ -360,7 +360,7 @@ padding-left: 10px;
 
 .card-group {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-left: 18px;
 }
 
@@ -376,8 +376,17 @@ flex-wrap: wrap;
 }
 
 .heart {
-  margin: 30px;
+
   font-size: 30px;
+  display: flex;
+  margin: 30px;
+  
+}
+
+.card-groupie {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
 }
 
 .newyork {
@@ -464,6 +473,8 @@ a {
     color: white;
   }
 }
+
+
 
 
     
@@ -685,4 +696,66 @@ label {
 */
 .new-box {
   z-index: 1;
+}
+
+@media only screen and (max-width: 898px) and (min-width: 811px) {
+  .card img {
+    height: 90px;
+  }
+  .card h2 {
+    font-size: 14px;
+  }
+  .card p {
+    font-size: 8px;
+    margin: 0;
+    padding: 4px;
+  }
+  .heart {
+    margin: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  #enchanted, #full {
+    font-size: 10px;
+  }
+  .new-box {
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    width: 50px;
+    height: 10px;
+    font-size: 10px;
+    padding-bottom: 5px;
+
+
+  }
+}
+
+@media only screen and (max-width: 815px) and (min-width: 600px) {
+
+ #enchanted, #full, #full p , #enchanted p {
+    font-size: 9px;
+  }
+  .card image {
+    height: 55px
+  }
+  .heart {
+  font-size: 8px;
+  }
+  .new-box {
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    width: 40px;
+    height: 7px;
+    font-size: 7px;
+    padding-bottom: 5px;
+
+  }
+  .card h2 {
+    font-size: 11px;
+  }
+  .card p {
+    font-size: 8px;
+  }
 }
