@@ -5,4 +5,4 @@ OHMYFOOD
 https://github.com/sumeyasheikh/SumeyaSheikh_2_03012023_A.git
 
 my webiste live
-https://sumeyasheikh.github.io/website_live/
+sumeyasheikh.netlify.app
