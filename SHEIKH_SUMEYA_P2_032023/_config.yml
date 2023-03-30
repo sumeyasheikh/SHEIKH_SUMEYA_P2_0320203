@@ -1,0 +1,8 @@
+# Site settings
+title: Ohmyfood
+description: Project 2
+url: https://sumeyasheikh.github.io/SumeyaSheikh_2_03012023_A/
+
+# Build settings
+markdown: kramdown
+theme: minima
