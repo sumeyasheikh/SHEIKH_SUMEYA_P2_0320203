@@ -411,7 +411,7 @@ flex-wrap: wrap;
   color: rgb(255, 255, 255);
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
-  transition: all 0.5s;
+  transition: all 0.3s;
   transition-timing-function: ease-in-out;
 
 }
