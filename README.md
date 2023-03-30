@@ -3,4 +3,4 @@ OHMYFOOD
 
 
 my webiste live
-sumeyasheikh.netlify.app
+https://sumeyasheikh.netlify.app/
