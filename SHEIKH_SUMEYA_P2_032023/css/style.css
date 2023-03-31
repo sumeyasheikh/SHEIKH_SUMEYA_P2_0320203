@@ -27,7 +27,7 @@ header img {
     margin: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
      .menu-main h1 {
         display: none;
      }
@@ -125,7 +125,7 @@ margin-right: 170px;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .container {
         margin-top: -30px;
         padding-top: 30px;
@@ -138,14 +138,14 @@ margin-right: 170px;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .move-up {
         margin-top: 0;
     }
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .menu-box {
         background-color: rgb(221, 221, 221);
         padding-right: 20px;
@@ -174,13 +174,13 @@ margin-right: 170px;
 
 
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
     .container h1 {
       display: none; 
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .container h1 {
       display: block; 
       justify-content: center; 
@@ -198,27 +198,27 @@ margin-right: 170px;
         margin: auto;
     }
 
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 769px) {
     .big-text {
       display: block /* Hide the button on desktop screens */;
       margin-bottom: 20px;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .big-text {
       display: none; /* Show the button on mobile screens */
     }
   }
 
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 769px) {
     .menu-item-description, .fa-spin {
       display: none;
       margin-bottom: 20px;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .menu-item-description  {
       display: block;
     }
@@ -252,13 +252,13 @@ margin-right: 170px;
     }
   
 
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 769px) {
     .button {
       display: none; 
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .button {
       display: block; 
       justify-content: center; 
@@ -307,7 +307,7 @@ a {
   color: black;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   footer img {
     margin: 20px;
     filter: brightness(0) invert(1);
@@ -369,7 +369,7 @@ a {
 
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
   .heart, .tick-box {
     display: none;
 
@@ -423,7 +423,7 @@ a {
     transition: width 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .container p {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
@@ -489,15 +489,15 @@ section h3  {
 
 
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
     section h3, .price {
-      display: block; /* Hide the button on desktop screens */
+      display: block; 
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     section h3, .price{
-      display: none; /* Show the button on mobile screens */ /* Center the button horizontally */
+      display: none; 
     }
   }
 
@@ -511,7 +511,7 @@ section h3  {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .fade-one {
     animation: fade-one 1s ease-in-out forwards;
   }
@@ -574,7 +574,7 @@ section h3  {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .tick-box {
     position: relative;
     width: 0;
