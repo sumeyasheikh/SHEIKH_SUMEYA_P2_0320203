@@ -86,7 +86,7 @@ header img {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 header {
         width: auto;
         background-color: rgb(221, 221, 221);
@@ -170,13 +170,13 @@ header {
   transform: scale(1.10);
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
     .button  {
       display: none; /* Hide the button on desktop screens */
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .button {
       display: block; /* Show the button on mobile screens */
       justify-content: center; /* Center the button horizontally */
@@ -269,7 +269,7 @@ transform: scale(1.05)
   
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .homesection h2 {
     text-align: left;
     padding-left: 10px;
@@ -353,7 +353,7 @@ padding-left: 10px;
   background-color: rgb(255, 255, 255);
   margin: auto;
   margin-bottom: 25px;
-  width: 90%;
+  width: 80%;
   border-radius: 1em;
   transition:all 200ms;
   box-shadow: 30px 0px 40px rgb(0,0,0,0.1), -30px 0px 40px rgb(0,0,0,0.2);
@@ -470,7 +470,7 @@ li a {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   footer img {
     margin: 20px;
     filter: brightness(0) invert(1);
@@ -522,19 +522,19 @@ Menu Pages
   
 
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
     main , .slideshow , .banner-main img, .our-story , .our-story img{
       display: block;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .slideshow , .banner-main img, .our-story, .our-story, nav  img {
       display: none;
     }
   }
 
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 769px) {
      .home-main,  .homesection img , .number-group{
       display: none; 
     }
@@ -637,7 +637,7 @@ Menu Pages
   
   
   }
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 769px) {
     .new-box {
       position: absolute;
       top: 5%;
@@ -650,7 +650,7 @@ Menu Pages
 
 
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
   .container-homepage {
     display: flex;
     flex-direction: row;
@@ -725,7 +725,7 @@ font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 815px) and (min-width: 600px) {
+@media only screen and (max-width: 815px) and (min-width: 769px) {
 
  #enchanted, #full, #full p , #enchanted p {
     font-size: 9px;
